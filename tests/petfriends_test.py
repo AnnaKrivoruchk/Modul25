@@ -3,24 +3,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-
-
-# def test_my_pets_card_1234():
-#
-# pet_images = pytest.drver.find_elements(By.TAG_NAME, 'img') # все картинки питомцев
-# pet_names = pytest.drver.find_elements(By.TAG_NAME, 'td[1]') # все имена питомцев
-# pet_descriptions = pytest.drver.find_elements(By.TAG_NAME, 'td[2]') # все строчки с информацияей о виде питомца
-# pet_age = pytest.drver.find_elements(By.TAG_NAME, 'td[3]') # все строчки с информацияей о возрасте питомца
-
-# def test_my_pets_card_1():
-#     row_count = len(pytest.driver.find_element(By.XPATH, "//table[@id='DataTable']/tbody/tr"))
-#     my_pet_amount = pytest.driver.find_element(By.XPATH, '(html/body/div[1]/div[1]/div[1])')
-#     my_pet_amount = my_pet_amount.get_attribute('innerText')
-#     assert row_count == my_pet_amount
-
-# В написанном тесте (проверка карточек питомцев) добавьте неявные ожидания всех элементов (фото, имя питомца, его возраст).
-# В написанном тесте (проверка таблицы питомцев) добавьте явные ожидания элементов страницы.
-
 def test_authentication(authentication):
     # тест авторизации
     assert pytest.driver.find_element(By.TAG_NAME, 'h1').text == "PetFriends"
